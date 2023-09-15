@@ -1,6 +1,6 @@
 # Projeto Front End Covid Analytics
 
-![Covid Analytics](./src/assets/images/logo.svg)
+![Covid Analytics](./src/assets/logoOficial.png)
 
 Projeto solicitado como teste tecnico da empresa Prosesmt.
 
@@ -38,7 +38,6 @@ $ http://localhost:5173/
 - Filtrar por data
 - Adicionar novos dados
 
-
 ## Bibliotecas utilizadas
 
 - [x] React
@@ -59,7 +58,7 @@ $ http://localhost:5173/
 
 ## Como interagir com o projeto
 
-[Clique aqui](https://github.com/AntonioAugustoRezende/teste_tecnico_react_prosesmt) para acessar o repositório da API relacionada a este projeto.
+[Clique aqui](https://github.com/AntonioAugustoRezende/Covid_Analytics) para acessar o repositório da API relacionada a este projeto.
 
 ## Pessoa contribuidora
 
