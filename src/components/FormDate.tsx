@@ -5,6 +5,9 @@ import { FormDateData, formDateSchema } from "../schemas/formDateSchemas";
 import { CaseHook } from "../hooks/cases";
 
 export default function FormDate() {
+  // Este componente é o formulário responsável por resgatar os dados dos inputs das datas
+  // Usei o user-form do reat-hook-form por ser mais simples o resgate
+  // Ele faz isso atravez de função builtin chamada handleSubmit
   const {
     register,
     handleSubmit,

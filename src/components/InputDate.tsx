@@ -22,6 +22,8 @@ export default function InputDate({
   register,
   error,
 }: InputDateProps) {
+  // Esse é um componente Input utlizado na captura dos datas
+  // Foi usado na Home e Modal
   return (
     <div className="flex flex-col gap-3 sm:w-16 md:w-14 lg:w-16 xl:w-16 w-16">
       <label className="text-base font-bold text-grey-200 mb-2" htmlFor={label}>

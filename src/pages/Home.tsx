@@ -34,6 +34,7 @@ export interface Countries {
   updated_at: string;
 }
 export const Home = () => {
+  // Acesso as funções e estados do contexto
   const {
     getAllCases,
     cases,
@@ -51,6 +52,8 @@ export const Home = () => {
     isOpenResult,
     setIsOpenResult,
   } = CaseHook();
+
+  // UseEffect para inicializar os cards e as options do Select
   useEffect(() => {
     getAllCases();
     getAllCountries();
@@ -58,6 +61,8 @@ export const Home = () => {
 
   return (
     <>
+      {/*  Condicional para abertura do Modal e Resuldado do que foi inserido no
+      Modal */}
       {isOpen && (
         <Modal
           title="Cadastre novos casos"
@@ -70,12 +75,13 @@ export const Home = () => {
           toggleModal={() => setIsOpenResult((prevState) => !prevState)}
         />
       )}
-
+      {/* Condicional para abertura do Loading */}
       {globalLoading && <Loading />}
       <div className="font-bold flex flex-1 p-6 gap-3 bg-black text-zinc-50">
         <aside className="md:w-64 lg:w-64 xl:w-[17rem] 2xl:w-[17rem] w-[17rem] sm:hidden w-34 mt-6 h-fit pt-6 flex flex-col gap-4 bg-zinc-900 p-5 rounded">
           <h2 className="font-semibold text-2xl mb-6">Filtros</h2>
-
+          {/*  Condicional quando houver algum filtro seleionado um botão "Limpar
+          filtro" aparece */}
           {state || country || date.length > 0 ? (
             <button
               onClick={() => {
@@ -86,7 +92,6 @@ export const Home = () => {
               Limpar Filtros
             </button>
           ) : null}
-
           <InputCountry
             data={cases}
             title="Por estado"
@@ -97,11 +102,11 @@ export const Home = () => {
             title="Por país"
             titleButton="Pesquisar por país"
           />
-
           <span>Por data</span>
           <FormDate />
         </aside>
         <main className="flex-1  rounded mt-6 bg-gradient-to-b from-blue-900/40 from-0% to-zinc-900 to-10% text-gray-100">
+          {/* // clicar na img e titúlo tambem resetam os filtros */}
           <div
             className="cursor-pointer"
             onClick={() => {
@@ -116,7 +121,8 @@ export const Home = () => {
           >
             Cadastrar dados
           </button>
-
+          {/* Condional para determinar qual Cards renderizar, Estados, Países ou
+          datas */}
           {!state && !country ? (
             <ul className="grid sm:grid-cols-2 overflow-auto gap-4 p-6 mt-6  md:grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 2xl:grid-cols-4 grid-cols-5">
               {date.length > 0

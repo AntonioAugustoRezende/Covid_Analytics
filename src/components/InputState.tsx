@@ -17,6 +17,10 @@ export default function InputState({
   country,
   titleButton,
 }: InputsProps) {
+  //  Componente para resgatar qual país o usuário iria selecionar
+  // Em um primeiro momento iria usar um input para Estados e Países mas devido ao retorno dos
+  // dados serem diferentes e por tempo decidi separar
+
   const { register, handleSubmit } = useForm<FormStateData>({
     resolver: zodResolver(formStateSchema),
   });

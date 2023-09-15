@@ -23,6 +23,10 @@ export default function InputCountry({
     resolver: zodResolver(formStateSchema),
   });
 
+  //  Esse componente é responsavel por resgatar o dado de paíse inseridos
+  //  Também foi usado o react-hook-form
+  //  O component Select percorre todos os países/estados da API para inserir nas options
+  //  É uma boa maneira de "travar" o que o usuário vai selecionar de acordo com a API
   const { getOneCountry } = CaseHook();
   return (
     <form

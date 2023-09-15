@@ -13,6 +13,8 @@ interface CardProps {
   cases?: number;
 }
 export default function Card({ state, suspects, deaths, cases }: CardProps) {
+  // Este componente é o card que renderizará os dados da API
+  // Foi utilizado o MaterialUI para fazer a parte das tables
   return (
     <li className="bg-gray-200/90 p-3 flex flex-col  gap-3 rounded-md hover:bg-white/40">
       <h2 className="text-xl text-center font-extrabold text-blue-900">

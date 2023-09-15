@@ -25,6 +25,12 @@ export const Modal = ({
   attributes,
   widthFull = false,
 }: ModalProps) => {
+  // Componente de Modal juntamente com outros componentes criados
+  // Foi utilizado o react-hook-form para resgatar as informações para serem enviados para o contexto
+  // e serem renderizados novamente para o usuário
+  // Na linha 46 a 59 mostra a logica para quando o usuário clicar fora do modal, ele ser fechado
+  // Para isso é utlizado eventos do JS para determinar onde o usuário está clicando
+
   const ref = useRef<HTMLDivElement>(null);
 
   const { cases, handleSubmitModal } = CaseHook();

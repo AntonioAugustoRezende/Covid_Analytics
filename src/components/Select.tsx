@@ -17,6 +17,9 @@ export const Select = ({
   register,
   defaultValues,
 }: iSelectProps) => {
+  // Componente utilizado para selecionar os Países ou Estados
+  // Após uma requisição da API usa-se esse componente para renderizar os Países e Estados
+  // nas options
   return (
     <div className="flex flex-col gap-2 w-full">
       <label className="text-base font-bold text-grey-200 mb-4" htmlFor={label}>

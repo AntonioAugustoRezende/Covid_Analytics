@@ -25,6 +25,10 @@ export const ResultCase = ({
   attributes,
   widthFull = false,
 }: ModalProps) => {
+  // Modal utilizado para retornar as informações preenchidas pelo usuário
+  // Assim como no Modal é utilizado o useRef para fecha-lo quando clicado fora dele
+  // Assim como no Card é utlizado a table no MaterialUI
+
   const ref = useRef<HTMLDivElement>(null);
 
   const { newCase } = CaseHook();

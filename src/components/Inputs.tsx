@@ -21,6 +21,7 @@ export const Input = ({
   error,
   defaultValue,
 }: iInputProps) => {
+  // Esse componente são inputs utilizados para resgatar os dados inseridos pelo modal
   return (
     <div className="flex flex-col gap-2 input-width w-full relative">
       <label className="text-base font-bold text-grey-200 mb-4" htmlFor={label}>
