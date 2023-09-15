@@ -60,6 +60,8 @@ $ http://localhost:5173/
 
 [Clique aqui](https://github.com/AntonioAugustoRezende/Covid_Analytics) para acessar o repositório da API relacionada a este projeto.
 
+[Clique aqui](https://analytics-covid.vercel.app/) para acessar a URL projeto.
+
 ## Pessoa contribuidora
 
 - [Antonio Augusto](https://github.com/AntonioAugustoRezende)
