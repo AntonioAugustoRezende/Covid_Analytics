@@ -53,7 +53,7 @@ export const Home = () => {
     setIsOpenResult,
   } = CaseHook();
 
-  // UseEffect para inicializar os cards e as options do Select
+  // UseEffect para inicializar os cards e as options do Select.
   useEffect(() => {
     getAllCases();
     getAllCountries();
